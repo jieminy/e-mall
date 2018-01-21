@@ -13,7 +13,6 @@ public class ItemService implements IItemService{
 
     @Override
     public TbItem getItemById(long itemId) {
-
-        return null;
+        return itemMapper.selectByPrimaryKey(itemId);
     }
 }
